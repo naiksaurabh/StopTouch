@@ -1,28 +1,18 @@
 package com.sutla.stoptouch;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.Service;
-import android.content.ClipData;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PixelFormat;
-import android.inputmethodservice.InputMethodService;
-import android.inputmethodservice.Keyboard;
-import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.inputmethod.InputConnection;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class TransparentActivity  extends Service { //extends InputMethodService
 	private WindowManager windowManager;
