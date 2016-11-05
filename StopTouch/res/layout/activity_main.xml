@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:padding="10dp">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+    
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+<EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="100"
+                    android:inputType="number"
+                    android:padding="10dp" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Enter Distance From Top of the Screen"
+            android:textStyle="bold" />
+
+                
+<View 
+    android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="gone"
+        android:background="#eeeeee"/>
+</LinearLayout>
+
+
+        
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linear"
+            android:padding="13dp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/seekBar1"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text=""
+            android:textStyle="bold" />
+<View 
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/textView2"
+        android:layout_height="10dp"
+        android:background="#e5e5e5"/>
+
+    </RelativeLayout>
+            <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="Disable" 
+            android:background="#ff1111"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button1"
+                android:layout_alignLeft="@+id/button1"
+                android:layout_marginBottom="14dp"
+                android:background="#22dd2f"
+                android:text="Enable" />
+
+    </RelativeLayout>
